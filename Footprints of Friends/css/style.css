@@ -1,0 +1,29 @@
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.thumbnail-product {
+    height: 150px !important;
+    max-width: 150px !important;
+}
+
+.sale-real-price {
+    text-decoration: line-through;
+}
+
+.sale-offer-price {
+    color: darkgreen;
+}
+
+
+.user-image {
+    max-width: 500px;
+    width: 125px;
+    height: 125px;
+}
+
+.error {
+    color: red;
+    font-weight: bolder;
+}

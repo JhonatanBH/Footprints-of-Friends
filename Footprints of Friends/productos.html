@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Venta de productos de mascotas" />
+    <meta name="author" content="Footprints of Friends" />
+    <link rel="shortcut icon" href="img/logo_2.jpg" type="image/x-icon" />
+    <title>Footprints of Friends</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link href="stylesheet" href="css/style.css" />
+    <script>
+        src = "js/header.js"
+    </script>
+    <script src="js/header.js"></script>
+</head>
+
+<body>
+    <!-- cabecera superir con meni principal -->
+    <header></header>
+
+    <!-- contenido principal de la página -->
+    <main role="main ">
+        <div class="container">
+            <section>
+                <h1>Mantenedor de productos
+                </h1>
+                <br />
+                <form class="row g-3 needs-validation" action="" novalidate>
+                    <div class="container fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <form method="POST" id="formulario1" action="recibir_datos">
+                                    <div class="mb-3 fw-bold">
+                                        <label for="id" class="form-label">ID</label>
+                                        <input type="id" id="id" name="id" class="form-control"
+                                            placeholder="Ingrese código del producto" value="" />
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 fw-bold">
+                                        <label for="Categoria" class="form-label">Categoría</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Seleccione Categoría</option>
+                                            <option value="1">Perros</option>
+                                            <option value="2">Gatos</option>
+                                            <option value="3">Otro</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 fw-bold">
+                                        <label for="nombre" class="form-label">Nombre del producto</label>
+                                        <input type="nombre" id="nombre" name="nombre" class="form-control"
+                                            placeholder="Wiskas,Perrigri,etc." value="" />
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+    
+                                    <div class="mb-3 fw-bold">
+                                        <label for="Descripcion" class="form-label">Descripción</label>
+                                        <textarea class="form-control" id="direccion " rows="3"
+                                            placeholder="Descripción  del producto" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 fw-bold">
+                                        <label for="Precio" class="form-label">Precio</label>
+                                        <input type="text " class="form-control" id="Precio" placeholder="$15.000"
+                                            required />
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 fw-bold">
+                                        <label for="descuento" class="form-label">Descuento por suscripción</label>
+                                        <input type="text " class="form-control" id="descuento" placeholder="20%"
+                                            required />
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 fw-bold">
+                                        <label for="oferta" class="form-label">Descuento por oferta</label>
+                                        <input type="text " class="form-control" id="oferta"
+                                            placeholder="Wiskas,Perrigri,etc." required />
+                                        <div class="invalid-feedback">
+                                            Debe llenar el campo solicitado
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">
+                                        Guardar
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        Nuevo
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        Eliminar
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="img/user.jpg" alt="" class="user-image" width="225"
+                                                height="250" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="file" class="form-control" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Precio</th>
+                <th scope="col">%Desc Subscriptor</th>
+                <th scope="col">%Desc Oferta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">143</th>
+                <td>Perro</td>
+                <td>Saco alimento Royan Canin</td>
+                <td>Saco Royan Canin de 3 kilos</td>
+                <td>8.000</td>
+                <td>5%</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <th scope="row">243</th>
+                <td>Perro</td>
+                <td>Cama para perro</td>
+                <td>Cama para perros 40cm</td>
+                <td>$16.000</td>
+                <td>5%</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <th scope="row">23</th>
+                <td>Perro</td>
+                <td>Sachet Pedigree Cachorro</td>
+                <td>Sachet Pedigree Cachorro 85gr</td>
+                <td>$10.000</td>
+                <td>5%</td>
+                <td>2%</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Pie de página -->
+    <footer></footer>
+        <!-- Hacemos el llamado a los validadores, que están en la carpeta js  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script src="js/validador.js" type="text/javascript"></script>
+</body>
+
+</html>
